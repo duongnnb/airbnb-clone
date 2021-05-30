@@ -4,15 +4,18 @@ import SearchIcon from '@material-ui/icons/Search';
 import LanguageIcon from '@material-ui/icons/Language';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Avatar } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <div className='header'>
-      <img
-        className='header__icon'
-        src='https://cdn.designrush.com/uploads/inspiration_images/4810/990__1511452487_364_Airbnb.png'
-        alt=''
-      ></img>
+      <Link to='/'>
+        <img
+          className='header__icon'
+          src='https://cdn.designrush.com/uploads/inspiration_images/4810/990__1511452487_364_Airbnb.png'
+          alt=''
+        ></img>
+      </Link>
 
       <div className='header__center'>
         <input type='text' />
